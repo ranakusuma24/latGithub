@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Kolaborasi Git & GitHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: #24292e;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #586069;
+            font-size: 1.1rem;
+        }
+
+        /* Ruang Koordinator */
+        .coordinator-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        /* Grid untuk Para Siswa/Kolaborator */
+        .collaborators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        /* Desain Card Foto */
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #e1e4e8;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card.coordinator {
+            border: 2px solid #0366d6; /* Pembeda warna untuk Guru/Koordinator */
+            max-width: 280px;
+            width: 100%;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #f0f1f4;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #24292e;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #6a737d;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: #e1ecf4;
+            color: #39739d;
+        }
+
+        .badge.teacher {
+            background-color: #dcffe4;
+            color: #1a7f37;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Proyek Kolaborasi Git & GitHub</h1>
+            <p>Daftar Koordinator dan Anggota Pengembang Perangkat Lunak</p>
+        </header>
+
+        <div class="coordinator-section">
+            <div class="card coordinator">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=teacher" alt="Foto Koordinator">
+                <h3>Rana Kusuma </h3>
+                <p>ranakusuma24 - Koordinator</p>
+                <span class="badge teacher">Koordinator / Guru</span>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #e1e4e8; margin-bottom: 40px;">
+
+        <h2 style="text-align: center; margin-bottom: 20px; color: #24292e;">Daftar Kolaborator (Siswa)</h2>
+        
+        <div class="collaborators-grid">
+
+            <div class="card">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Siswa1" alt="Foto Siswa 1">
+                <h3>Nama Siswa 1</h3>
+                <p>@username_siswa1</p>
+                <span class="badge">Kolaborator</span>
+            </div>
+
+            <div class="card">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Siswa2" alt="Foto Siswa 2">
+                <h3>Nama Siswa 2</h3>
+                <p>@username_siswa2</p>
+                <span class="badge">Kolaborator</span>
+            </div>
+
+            </div>
+    </div>
+
+</body>
+</html>
