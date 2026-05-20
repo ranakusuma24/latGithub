@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Nilai Kolaborator Git & GitHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fafbfd;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #24292e;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #586069;
+            font-size: 1.1rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #24292e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-back:hover {
+            background-color: #444d56;
+        }
+
+        /* Desain Tabel Nilai */
+        .table-container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e1e4e8;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        th {
+            background-color: #f6f8fa;
+            color: #24292e;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background-color: rgba(3, 102, 214, 0.02);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 12px;
+            background-color: #dcffe4;
+            color: #1a7f37;
+        }
+
+        .status-badge.pending {
+            background-color: #fff8c5;
+            color: #9a6700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="home.html" class="btn-back">⬅ Kembali ke Beranda</a>
+
+        <header>
+            <h1>Rekap Nilai Tugas Git & GitHub</h1>
+            <p>Daftar nilai proyek kolaborasi siswa yang berhasil melakukan Push / Merge</p>
+        </header>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">No</th>
+                        <th>Nama Siswa</th>
+                        <th>Username GitHub</th>
+                        <th style="width: 120px; text-align: center;">Nilai</th>
+                        <th style="width: 150px; text-align: center;">Status Git</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Nama Siswa 1</strong></td>
+                        <td>@username_siswa1</td>
+                        <td style="text-align: center; font-weight: bold; color: #0366d6;">95</td>
+                        <td style="text-align: center;"><span class="status-badge">Sukses Push</span></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Nama Siswa 2</strong></td>
+                        <td>@username_siswa2</td>
+                        <td style="text-align: center; font-weight: bold; color: #0366d6;">92</td>
+                        <td style="text-align: center;"><span class="status-badge">Sukses Push</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><em>(Isi Nama Siswa Baru)</em></td>
+                        <td>@username_anda</td>
+                        <td style="text-align: center; font-weight: bold; color: #6a737d;">-</td>
+                        <td style="text-align: center;"><span class="status-badge pending">Belum Dinilai</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
